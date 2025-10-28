@@ -13,6 +13,7 @@
 -- https://github.com/peterlefanulumsdaine/palmgren-archive/tree/MSCS-2023/MLTT-and-setoids
 --
 -- This development should compile at least under Agda 2.5.2, 2.5.3;
+-- also 2.6.4 and onwards with lossy unification;
 -- see below for more detailed compatibility notes
 
 module README where
@@ -68,6 +69,13 @@ import V-model-pt16    -- Quotient sets
 --
 --   - 2.5.2: checks in 2min 15sec
 --   - 2.5.3: checks in 2min 30sec
+-- 
+-- Tested successfully using lossy unification introduced in 2.6.4.3
+-- with following versions (2025-10-29, Mac mini M4 Pro):
+-- 
+--   - 2.6.4.3 with lossy unification: checks in 10sec
+--   - 2.8.0   with lossy unification: checks in 11sec
+--   - 2.9.0   with lossy unification: checks in 7sec
 --
 -- Unclear status with these versions:
 --
@@ -76,3 +84,4 @@ import V-model-pt16    -- Quotient sets
 --   - 2.6.1:
 --
 -- Fails with: 2.4.2.x, 2.5.1.1 (and likely with older versions as well)
+-- 

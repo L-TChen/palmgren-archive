@@ -1,0 +1,7 @@
+name: setoid
+
+include:
+  .
+
+flags:
+  --auto-inline --without-K --lossy-unification 
